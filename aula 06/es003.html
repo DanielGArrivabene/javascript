@@ -29,7 +29,7 @@
        var n2 = Number.parseFloat(window.prompt('Digite um número Real:'))
        var n3 = Number(window.prompt('Digite outro número'))
        var s = n1 + n2 + n3
-       window.alert('A soma entre os números é ' + s)
+       window.alert('A soma entre os números é ' + String(s))
         /* number + number = adição
            string + string = concatenação
            ---------------------
@@ -43,6 +43,16 @@
            String() para converter para string
            
            x.toString digite no final para também converter para string*/
+           
+            /*Formatação de Strings
+
+            var nome = 'Daniel'
+            var idade =  18
+            var nota = 10.5
+
+            'O aluno ' + nome + ' de ' + idade + ' anos tirou ' + nota
+                                     ou
+            `O aluno ${nome} de ${idade} anos tirou ${nota} ` --> entre crases; isso, é template strings; isso ${} é placeholder*/
     </script>
 </body>
 </html>
