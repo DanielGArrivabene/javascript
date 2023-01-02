@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+
+    <script>
+        window.confirm('Você deseja receber notificações por email?')
+
+        var nome = window.prompt('Digite seu nome')
+        window.alert('muito prazer ' + nome + '! Iremos fazer algumas perguntas para aprimorar sua experiência.')
+
+        var ano = Number(window.prompt('Digite o ano atual'))
+        var nasc = Number(window.prompt('Digite seu ano de nascimento'))
+        var idade = ano - nasc  
+
+        window.confirm('Você tem ' + idade + ' anos ?')
+
+        var sal = Number(window.prompt('Digite seu salário'))
+
+        document.writeln('Seu nome tem ' + nome.length + ' letras.')
+        document.writeln('Seu nome em maiúsculas: ' + nome.toUpperCase() + '.')
+        document.writeln('Seu nome em minúsculas: ' + nome.toLowerCase() + '.')
+        document.writeln('Seu salário é de ' + sal.toFixed(2))
+        document.writeln('Seu salário ' + sal.toLocaleString('pt-br', {style:'currency', currency:  'BRL'}))
+    </script>
+</body>
+</html>
