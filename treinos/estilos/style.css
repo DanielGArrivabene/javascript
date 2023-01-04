@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+
+* {
+     padding: 0px;
+     margin: 0px;
+}
+
+
 body, 
  html {
     font-family: Arial, Helvetica, sans-serif;
@@ -8,26 +15,46 @@ body,
 
 body {
     background-color: rgb(130, 74, 74);
-    height: 100vh;
-    width: 100vw;
-
+    height: 96vh;
+    width: 98vw;
+    position: absolute;
 }
 
 
 main {
+    position: relative;
     background-color: white;
     width: 320px;
     height: 520px;
     border-radius: 20px;
-    transform: translate(50%, 50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 div#conteudo {
-    height: 307px;
+    height: 350px;
+    text-align: center;
+    padding: 10px;
+}
+
+div#conteudo > h1 {
+    padding-bottom: 2px;
+}
+
+div#conteudo > p {
+    margin: 3px;
+    font-size: 1.05em;
 }
 
 
 div#imagem > img {
     width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: 180px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
