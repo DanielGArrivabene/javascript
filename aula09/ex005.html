@@ -14,15 +14,14 @@
     </style>
 </head>
 <body>
-    <h1>Primeiros passos com DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar <strong>DOM</strong> em Java Script</p>
+    <h1 id="qs">Primeiros passos com DOM</h1>
+    <p class="strogonoff">Aqui vai o resultado</p>
+    <p name="teste">Aprendendo a usar <strong>DOM</strong> em Java Script</p>
     <div id="batata">Clique aqui</div>
 
 
     <script>
         var p1 = window.document.getElementsByTagName('p')[1]
-
         document.writeln('Está escrito assim: ' + p1.innerHTML)
         p1.style.color = 'blue'
 
@@ -31,6 +30,12 @@
 
         window.document.getElementById("batata").innerText = 'Olá'
         window.document.getElementById('batata').style.background = 'red'
+
+        window.document.getElementsByName('teste')[0].style.background = 'orange'
+
+        var z = window.document.getElementsByClassName('strogonoff')[0].style.background = 'blue'
+
+        document.querySelector('h1#qs').style.color = 'red'
     </script>
 </body>
 </html>

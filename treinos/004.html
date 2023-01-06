@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <header>
+        <h1>Treinando os conhecimentos</h1>
+    </header>
+    <main>
+        <p>1</p>
+        <p id="JS">2</p>
+        <p name="Daniel">3</p>
+        <p class="cont">4</p>
+        <p id="Isabele">5</p>
+    </main>
+    
+
+    <script>
+        window.document.getElementsByTagName('p')[0].innerHTML = 'selecionando com marca.'
+
+        window.document.getElementById('JS').innerText = 'Selecionando com id'
+
+        window.document.getElementsByName('Daniel')[0].innerHTML = 'Selecionando com name'
+
+        window.document.getElementsByClassName('cont')[0].innerText = 'Selecionando com class'
+
+        window.document.querySelector('p#Isabele').innerHTML = 'Selecionando com querySelector'
+    </script>
+</body>
+</html>
