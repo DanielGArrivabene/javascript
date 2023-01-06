@@ -17,11 +17,20 @@
     <h1>Primeiros passos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em Java Script</p>
-    <div>Clique aqui</div>
+    <div id="batata">Clique aqui</div>
 
 
     <script>
-        window.document.write(window.document.URL)
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        document.writeln('Está escrito assim: ' + p1.innerHTML)
+        p1.style.color = 'blue'
+
+        var corpo = window.document.body
+        corpo.style.background = 'darkgreen'
+
+        window.document.getElementById("batata").innerText = 'Olá'
+        window.document.getElementById('batata').style.background = 'red'
     </script>
 </body>
 </html>
