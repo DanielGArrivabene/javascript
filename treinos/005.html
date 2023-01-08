@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Somador de notas</h1>
+
+    <label for="inome">Digite o nome:</label>
+    <input type="text" name="nome" id="inome"> <br>
+    <label for="inota1">Nota 1</label>
+    <input type="number" name="nota1" id="inota1"> <br>
+    <label for="inota2">Nota 2</label>
+    <input type="number" name="nota2" id="inota2"> <br>
+    <input type="button" value="Somar" onclick="soma()">
+    <p id="res"></p>
+
+
+
+    <script>
+        function soma() {
+            var nome = window.document.getElementById('inome').value
+            var n1 = document.getElementById('inota1')
+            var n1 = Number(n1.value)
+            var n2 = document.getElementById('inota2')
+            var n2 = Number(n2.value)
+
+            var s = n1 + n2
+
+            var p = document.getElementById('res')
+            p.innerHTML = ('O aluno ' + nome + ' tirou ' + s + ' no total')
+        }
+    </script>
+</body>
+</html>
