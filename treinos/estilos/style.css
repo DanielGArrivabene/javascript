@@ -14,7 +14,7 @@ body,
 
 
 body {
-    background-color: rgb(130, 74, 74);
+    background-color: rgb(0, 3, 50);
     height: 96vh;
     width: 98vw;
     position: absolute;
@@ -24,7 +24,7 @@ body {
 main {
     position: relative;
     background-color: white;
-    width: 320px;
+    width: 290px;
     height: 520px;
     border-radius: 20px;
     top: 50%;
@@ -58,3 +58,72 @@ div#imagem > img {
     background-size: cover;
     background-attachment: fixed;
 }
+
+
+input#iemail,
+input#isenha {
+    padding: 2.5px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    background-color: #010361be;
+    box-shadow: inset 0px 0px 30px rgb(5, 5, 5);
+    border-radius: 0px 10px 10px 10px;
+    color: rgb(255, 255, 255);
+
+    transform: translate(0px,-7px);
+}
+
+input#iemail:focus-within,
+input#isenha:focus-within {
+    background-color: rgba(167, 197, 255, 0.597);
+    box-shadow:  0px 0px 5px rgba(5, 5, 5, 0.545);
+    color: black;
+    font-weight: bold;
+
+    transition-timing-function: ease;
+    transition-duration: 1s;
+}
+
+.material-symbols-outlined {
+    color: rgba(0, 19, 76, 0.99);
+}
+
+input#iemail {
+    margin-top: 10px;
+    width: 200px;
+}
+
+label {
+    display: none;
+}
+
+
+.simbolo {
+    display: inline-block;
+}
+
+
+.options {
+    padding: 2px 20px 2px 20px;
+    font-weight: 500;
+    border: 1px solid rgba(0, 19, 76, 0.99);
+    border-radius: 3px;
+    margin: 4px;
+    background-color: rgb(36, 41, 81);
+    color: white;
+}
+
+input#icadastrar {
+    margin-bottom: 70px;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.5px;
+    border-radius: 3px;
+    font-size: 0.86em;
+}
+

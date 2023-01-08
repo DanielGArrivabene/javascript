@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="estilos/faviconpng.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -17,24 +19,26 @@
         <div id="conteudo">
             <h1>Login</h1>
             <p>Seja bem vindo!</p>
-            <p>Faça login com seus dados, <br> ou se cadastre na nossa plataforma.</p>
+            <p>Faça login com seus dados <br> ou se cadastre.</p>
 
             <form action="#" method="post">
                 <p>
+                    <label for="iemail" class="simbolo"><span class="material-symbols-outlined">mail</span></label>
                     <input type="email" name="email" id="iemail">
                     <label for="email">Email</label>
                 </p>
                 <p>
+                    <label for="isenha" class="simbolo"><span class="material-symbols-outlined">key</span></label>
                     <input type="password" name="senha" id="isenha">
                     <label for="senha">Senha</label>
                 </p>
+                <p>
+                    <input type="submit" value="Entrar" class="options">
+                </p>
+                <p>
+                    <input type="button" value="Cadastrar" class="options" id="icadastrar">
+                </p>
                 <p><a href="#">esqueci a senha</a></p>
-                <p>
-                    <input type="submit" value="Entrar">
-                </p>
-                <p>
-                    <input type="button" value="Cadastrar">
-                </p>
             </form>
         </div>
     </main>
