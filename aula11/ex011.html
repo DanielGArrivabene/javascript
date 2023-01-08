@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body,
+        html {
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 1.4em;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+
+        input#botao {
+            display: block;
+            width: 160px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#">
+        <fieldset>
+            <legend><h1>Teste de nacionalidade</h1></legend>
+            <p>
+                <label for="ipais">Digite seu país de origem:</label>
+                <input type="text" name="pais" id="ipais">
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verify()" id="botao">
+            </p>
+            <p>Resultado:<span id="res"></span></p>
+        </fieldset>
+    </form>
+
+
+
+    <script>
+        function verify() {
+            var pais = window.document.getElementById('ipais').value
+            var res = document.querySelector('span#res')
+            if (pais == 'Brasil') {
+                res.innerHTML = ' Brasileiro'
+            } else {
+                res.innerHTML = ' Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>

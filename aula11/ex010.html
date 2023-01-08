@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+
+    <p>
+        <label for="ivel">Velocidade do veículo:</label>
+        <input type="number" name="vel" id="ivel"> <span>Km/h</span>
+    </p>
+    <p>
+        <input type="button" value="Verificar" onclick="verify()">
+    </p>
+
+    <div id="res"></div>
+
+
+    <script>
+        
+
+        function verify() {
+            var vel = window.document.getElementById('ivel')
+            var vel = Number(vel.value)
+            var res = document.querySelector('div#res')
+
+            res.innerHTML = '<p>Sua velocidade atual é de <strong>' + vel +'</strong>Km/h</p>'
+            if (vel > 80) {
+                res.innerHTML += '<p><strong>MULTADO</strong></p>'
+            } else {
+                res.innerHTML += '<p>Dirija sempre com cinto de segurança!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
