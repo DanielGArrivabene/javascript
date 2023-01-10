@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+@media screen and (orientation:landscape) {
+    main {
+        width: 70vw;
+    }
+
+    div#conteudo {
+        
+    }
+}

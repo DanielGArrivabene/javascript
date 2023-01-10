@@ -14,18 +14,20 @@ body,
 
 
 body {
-    background-color: rgb(0, 3, 50);
-    height: 96vh;
+    background-image: linear-gradient(to bottom,#267d84,#207594,#285165,#2B465B,#060606);
+    height: 100vh;
     width: 98vw;
-    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
 main {
     position: relative;
     background-color: white;
-    width: 290px;
-    height: 520px;
+    width: 60%;
+    height: 76%;
+    min-height: 490px;
     border-radius: 20px;
     top: 50%;
     left: 50%;

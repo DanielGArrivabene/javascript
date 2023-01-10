@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var now = new Date()
+        var mes = now.getUTCMonth()
+        document.writeln(mes)
+
+        switch (mes) {
+            case 0:
+                document.writeln('Janeiro')
+                break
+            case 1:
+                document.writeln('Fevereiro')
+                break
+            case 2: 
+                document.writeln('Março')
+                break
+            case 3: 
+                document.writeln('Abril')
+                break
+            case 4: 
+                document.writeln('Maio')
+                break
+            case 5: 
+                document.writeln('Junho')
+                break
+            case 6: 
+                document.writeln('Julho')
+                break
+            case 7: 
+                document.writeln('Agosto')
+                break
+            case 8: 
+                document.writeln('Setembro')
+                break
+            case 9: 
+                document.writeln('Outubro')
+                break
+            case 10: 
+                document.writeln('Novembro')
+                break
+            case 11: 
+                document.writeln('Dezembro')
+                break
+            default:
+                document.writeln('[ERRO] Mês inválido')
+        }
+    </script>
+</body>
+</html>
