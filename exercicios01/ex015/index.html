@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar()" id="corpo">
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <main>
+        <div>
+            <form action="#" method="get">
+                <p>
+                    <label for="iano">Ano de nascimento:</label>
+                    <input type="number" name="ano" id="iano" min="1922" max="2023">
+                </p>
+                <p>
+                    <label for="isexo">Sexo:</label>
+                    <input type="radio" name="radiosex" id="imasc" checked>
+                    <label for="imasc">Masculino</label>
+                    <input type="radio" name="radiosex" id="ifem">
+                    <label for="ifem">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="verify()">
+                    <input type="reset" value="Limpar">
+                </p>
+            </form>
+        </div>
+        <div id="res">
+            <img src="imagens/jh.png" alt="imagem">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Daniel G. Arrivabene</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

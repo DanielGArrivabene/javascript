@@ -9,6 +9,8 @@ function carregar() {
 
     text.innerHTML = 'Agora são ' + hora + ':' + min
 
+    var hora = 19
+
     if (hora <= 12) {
         img.src = 'imagens/manhaok.png'
         corpo.style.background = '#fdf8bd'
