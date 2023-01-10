@@ -7,6 +7,12 @@
     }
 
     div#conteudo {
-        
+        float: left;
+        display: block;
+    }
+
+    div#imagem {
+        display: block;
+        float: right;
     }
 }
